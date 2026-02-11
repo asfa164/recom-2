@@ -1,0 +1,10 @@
+{
+  "objective": "What is this extra charge?",
+  "context": {
+    "persona": "telecom postpaid customer",
+    "domain": "billing",
+    "instructions": "keep it concise",
+    "satisfactionCriteria": "return a clear, testable defining objective",
+    "extraNotes": "Ireland market"
+  }
+}

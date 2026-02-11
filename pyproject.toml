@@ -1,0 +1,24 @@
+[project]
+name = "recommendation-engine"
+version = "0.1.0"
+description = "FastAPI objective recommendation service"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+  { name = "Louis Cronin", email = "louis.cronin@cyara.com" }
+]
+dependencies = [
+  "fastapi>=0.128.0,<0.129.0",
+  "uvicorn[standard]>=0.32.0",
+  "boto3>=1.42.37,<2.0.0",
+  "python-dotenv>=1.0.0",
+  "pydantic>=2.6.0",
+]
+
+[build-system]
+requires = ["hatchling>=1.24.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+# Your importable packages live under src/
+packages = ["src/core", "src/local", "src/inference"]

@@ -1,0 +1,40 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+localstack/.venv/
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs and deployment artifacts
+*.log
+output/
+*.zip
+
+# CI/CD
+.buildkite/builds/
+
+# OS files
+.DS_Store
+
+.env 
+
+# Security - AWS credentials (important addition)
+aws-config.json
+*.pem
+*.key
+
+virtualenv/
+Localstack/
+
+tmp_secret.json
